@@ -1,0 +1,69 @@
+using System;
+
+namespace MadLibs
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      /*
+      This program is called MadLibs
+      Author: Jason
+      */
+
+
+      // Let the user know that the program is starting:
+Console.WriteLine("Let the MadLibs begin...");
+
+      // Give the Mad Lib a title:
+      string title = "MadLibMania";
+
+      Console.WriteLine(title);
+      // Define user input and variables:
+Console.WriteLine("What is your name?");
+string name = Console.ReadLine();
+Console.WriteLine($"Give me a color, {name}.");
+string color = Console.ReadLine();
+Console.WriteLine($"Give me an adjective, {name}.");
+string adjective = Console.ReadLine();
+Console.WriteLine($"Give me another adjective, {name}.");
+string adjective2 = Console.ReadLine();
+Console.WriteLine("Give me one more adjective");
+string adjective3 = Console.ReadLine();
+Console.WriteLine($"Good. Now, {name}, this may sound weird, but bare with me. Give me a texture. I swear this will make sense soon.");
+string texture = Console.ReadLine();
+Console.WriteLine("Ok, now I need a verb.");
+string verb = Console.ReadLine();
+Console.WriteLine ($"Ok {name}, we are almost done. Now I need a noun.");
+string noun = Console.ReadLine();
+Console.WriteLine("Good, now one more");
+string nountwo = Console.ReadLine();
+Console.WriteLine("Ok, now we need an animal");
+string animal = Console.ReadLine();
+Console.WriteLine("good, now we need a food");
+string food = Console.ReadLine();
+Console.WriteLine("Ok, now we need an fruit");
+string fruit = Console.ReadLine();
+Console.WriteLine("Ok, now give us the name of your favorite superhero");
+string superhero = Console.ReadLine();
+Console.WriteLine("Ok, almost done. We need a country");
+string country = Console.ReadLine();
+Console.WriteLine("Now, give us a dessert");
+string dessert = Console.ReadLine();
+Console.WriteLine("Last one! give us a good year. ");
+string year = Console.ReadLine();
+Console.WriteLine("Ok, formulating your mad-lib story");
+
+
+
+      // The template for the story:
+
+      string story = $"This morning {name} woke up feeling {adjective}. 'It is going to be a {adjective2} day!' Outside, a bunch of {animal}s were protesting to keep {food} in stores. They began to {verb} to the rhythm of the {noun}, which made all the {fruit}s very {adjective3}. Concerned, {name} texted {superhero}, who flew {name} to {country} and dropped {name} in a puddle of frozen {dessert}. {name} woke up in the year {year}, in a world where {nountwo}s ruled the world.";
+
+
+      // Print the story:
+Console.WriteLine(story);
+    }
+  }
+}
+
